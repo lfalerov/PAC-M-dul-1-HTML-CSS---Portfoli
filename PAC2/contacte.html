@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Contacte">
+<meta name="keywords" content="HTML">
+<meta name="author" content="Lucia Falero">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<h1>Contacte</h1>
+    
+<div>
+<label for=”campCP”>Nom i cognom</label>
+<input id=”campCP” type=”text”>
+</div>
+
+<div>
+<label for=”campCP”>Adreça de correu electrònic</label>
+<input id=”campCP” type=”text”>
+</div>
+
+<div>
+<label for=”campCP”>Codi postal</label>
+<input id=”campCP” type=”number”>
+</div>
+
+<form action = "/cgi-bin/hello_get.cgi" method = "get">
+El seu missatge
+<br>
+<textarea rows = "5" cols = "60" name = "description">
+</textarea><br>
+</form>
+
+<fieldset>
+<legend>Accepta vuste el tractament dels seus dades personals?</legend>
+
+<div>
+<input type="checkbox" id="si" name="si"
+checked>
+<label for="si">si</label>
+</div>
+</fieldset>
+
+<div>
+<button type="button">Enviar</button>
+</div>
+
+
+</body>
+</html>
