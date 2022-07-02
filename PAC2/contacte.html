@@ -2,87 +2,98 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Contacte">
-<meta name="keywords" content="HTML">
-<meta name="author" content="Lucia Falero">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="style2.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
+
 <body>
-    
-<header>
-<nav>
-<ul class="home">    
-<li> <img src="imatges/home.svg" alt="home"/></img></li>
 
-<li>
-<ul class="list">
+  <nav class="topbar2">
 
-<li><a href="Inici.html">Inici</a></li>
-<li><a href="cv.html">CV</a></li>
-<li><a href="contacte.html">Contacte</a></li>
-</ul>
-</li>
-</ul>
-</nav>
+    <ul>
+      <li> <img src="imatges/home.svg" alt="home" /></li>
+    </ul>
 
-</header>
+    <ul class="topbar2">
+      <li>
+        <a href="Inici.html"> Inici </a>
+      </li>
+      <li>
+        <a href="CV.html"> CV </a>
+      </li>
+      <li>
+        <a href="Contacte.html"> Contacte </a>
+      </li>
+    </ul>
 
-<h1>Contacte</h1>
+  </nav>
 
-<h2>Parlem!</h2>
-    
-<div>
-<label for=”campCP”>Nom i cognom</label>
-<input id=”campCP” type=”text”>
-</div>
 
-<div>
-<label for=”campCP”>Adreça de correu electrònic</label>
-<input id=”campCP” type=”text”>
-</div>
+  <div class="container1">
+    <img src="imatges/summer.jpg" alt="cv" width="100%" height="150px">
+    <div class="centered"> Contacte </div>
+  </div>
 
-<div>
-<label for=”campCP”>Codi postal</label>
-<input id=”campCP” type=”number”>
-</div>
 
-<form action = "/cgi-bin/hello_get.cgi" method = "get">
-El seu missatge
-<br>
-<textarea rows = "5" cols = "60" name = "description">
+  <header>
+    <h1>Parlem!</h1>
+  </header>
+
+  <main>
+
+    <div>
+      <label for="campCP">Nom</label>
+      <input id="campCP" type="text">
+    </div>
+
+    <div>
+      <label for="campCP"><br>Correu electrònic</label>
+      <input id="campCP" type="text">
+    </div>
+
+    <form action="/cgi-bin/hello_get.cgi" method="get">
+      Comentaris
+      <br>
+      <textarea rows="5" cols="60" name="description">
 </textarea><br>
-</form>
+    </form>
 
-<fieldset>
-<legend>Accepta vuste el tractament dels seus dades personals?</legend>
+    <fieldset>
+      <legend>He llegit i accepto la politica de privacitat</legend>
 
-<div>
-<input type="checkbox" id="si" name="si"
-checked>
-<label for="si">si</label>
-</div>
-</fieldset>
+      <div>
+        <input type="checkbox" id="si" name="si">
+      </div>
+    </fieldset>
 
-<div>
-<button type="button">Enviar</button>
-</div>
+    <div class="button0"></div>
+    <div class="button1">
+      <button type="button">Enviar</button>
+    </div>
+  </main>
 
-<footer>
+  <footer>
 
-<a href="imatges/logo-twitter.svg">
-<img alt="https://twitter.com" src="imatges/logo-twitter.svg" width="25px">
-    
-<a href="imatges/logo-linkedin.svg">
-<img alt="https://linkedin.com" src="imatges/logo-linkedin.svg" width=25px>
-    
-<a href="imatges/logo-instagram.svg">
-<img alt="https://instagram.com" src="imatges/logo-instagram.svg" width=25px>
-</a>
-    
-</footer>
+    <a href="imatges/logo-twitter.svg">
+      <img alt="https://twitter.com" src="imatges/logo-twitter.svg" width="25px">
+
+      <a href="imatges/logo-linkedin.svg">
+        <img alt="https://linkedin.com" src="imatges/logo-linkedin.svg" width="25px">
+
+        <a href="imatges/logo-instagram.svg">
+          <img alt="https://instagram.com" src="imatges/logo-instagram.svg" width="25px">
+        </a>
+
+      </a>
+
+    </a>
+
+  </footer>
 
 
 </body>
+
 </html>

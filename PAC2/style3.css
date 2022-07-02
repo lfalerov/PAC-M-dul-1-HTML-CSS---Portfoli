@@ -1,0 +1,186 @@
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+    }
+
+
+    nav.topbar2 {
+        /* el flexcontainer exterior */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    ul.topbar2 {
+        /* el flex-container interior */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .topbar2 li {
+        display: block;
+        border: solid gray 1px;
+        /* color, tipus i gruix */
+        padding: 1rem 2rem;
+        /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+        background-color: black;
+    }
+
+    .topbar2 a {
+        color: white
+    }
+
+    .topbar2 img {
+        background-color: white;
+    }
+}
+
+/* If screen size is more than 768px wide, set the font-size of <div> to 40px */
+@media screen and (max-width:768px) and (min-width:601px) {
+    body {
+        font-size: 40px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+    }
+
+    nav.topbar2 {
+        /* el flexcontainer exterior */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    ul.topbar2 {
+        /* el flex-container interior */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .topbar2 li {
+        display: block;
+        border: solid gray 1px;
+        /* color, tipus i gruix */
+        padding: 1rem 2rem;
+        /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+        background-color: black;
+    }
+
+    .topbar2 a {
+        color: white
+    }
+
+    .topbar2 img {
+        background-color: white;
+    }
+}
+
+/* If screen size is more than 992px wide, set the font-size of <div> to 50px */
+@media screen and (max-width:992px) and (min-width:769px) {
+    body {
+        font-size: 50px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+    }
+
+    nav.topbar2 {
+        /* el flexcontainer exterior */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    ul.topbar2 {
+        /* el flex-container interior */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .topbar2 li {
+        display: block;
+        border: solid gray 1px;
+        /* color, tipus i gruix */
+        padding: 1rem 2rem;
+        /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+        background-color: black;
+    }
+
+    .topbar2 a {
+        color: white
+    }
+
+    .topbar2 img {
+        background-color: white;
+    }
+}
+
+/* If screen size is more than 1200px wide, set the font-size of <div> to 70px */
+@media screen and (min-width: 993px) {
+    body {
+        font-size: 70px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+    }
+
+    nav.topbar2 {
+        /* el flexcontainer exterior */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    ul.topbar2 {
+        /* el flex-container interior */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .topbar2 li {
+        display: block;
+        border: solid gray 1px;
+        /* color, tipus i gruix */
+        padding: 1rem 2rem;
+        /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+        background-color: black;
+    }
+
+    .topbar2 a {
+        color: white
+    }
+
+    .topbar2 img {
+        background-color: white;
+    }
+}
+
+h1,
+h2 h3 {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}

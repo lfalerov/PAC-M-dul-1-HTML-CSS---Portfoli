@@ -1,68 +1,267 @@
-body {
-background-color: white;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-style: normal;
-font-weight: 200;
-color: black;
-}
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 20px;
+      color: black;
+      background-color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+    }
+  
+  
+    nav.topbar2 {
+      /* el flexcontainer exterior */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+    }
+  
+    ul.topbar2 {
+      /* el flex-container interior */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-color: white;
+    }
+  
+    .topbar2 li {
+      display: block;
+      border: solid gray 1px;
+      /* color, tipus i gruix */
+      padding: 1rem 2rem;
+      /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+      background-color: black;
+    }
+  
+    .topbar2 a {
+      color: white
+    }
+  
+    .topbar2 img {
+      background-color: white;
+    }
+
+    .newstyle1 {
+        vertical-align: auto;
+        list-style-type: none;
+        margin: 1px;;
+        padding:0;
+        border:1px;
+        height: 120px;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        display:flex
+        }
+            
+        .newstyle11 { /*no es posa bé amb align-center*/
+        vertical-align:center;  
+        justify-self: right;
+        }  
+  }
+  
+    /* If screen size is more than 768px wide, set the font-size of <div> to 40px */
+    @media screen and (max-width:768px) and (min-width:601px){
+      body {
+        font-size: 40px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+      }
+  
+      nav.topbar2 {
+        /* el flexcontainer exterior */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+  
+      }
+  
+      ul.topbar2 {
+        /* el flex-container interior */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: white;
+      }
+  
+      .topbar2 li {
+        display: block;
+        border: solid gray 1px;
+        /* color, tipus i gruix */
+        padding: 1rem 2rem;
+        /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+        background-color: black;
+      }
+  
+      .topbar2 a {
+        color: white
+      }
+  
+      .topbar2 img {
+        background-color: white;
+      }
+
+      .newstyle1 {
+        vertical-align: auto;
+        list-style-type: none;
+        margin: 1px;;
+        padding:0;
+        border:1px;
+        height: 100px;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        display:flex
+        }
+            
+        .newstyle11 { /*no es posa bé amb align-center*/
+        vertical-align:center;  
+        justify-self: right;
+        }  
+    }
+  
+    /* If screen size is more than 992px wide, set the font-size of <div> to 50px */
+    @media screen and (max-width:992px) and (min-width:769px){
+      body {
+        font-size: 50px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+      }
+  
+    nav.topbar2 {
+      /* el flexcontainer exterior */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+    }
+  
+    ul.topbar2 {
+      /* el flex-container interior */
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      background-color: white;
+    }
+  
+    .topbar2 li {
+      display: block;
+      border: solid gray 1px;
+      /* color, tipus i gruix */
+      padding: 1rem 2rem;
+      /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+      background-color: black;
+    }
+  
+    .topbar2 a {
+      color: white
+    }
+  
+    .topbar2 img {
+      background-color: white;
+    }
+
+    .newstyle1 {
+        vertical-align: auto;
+        list-style-type: none;
+        margin:1px;
+        padding:0;
+        border:1px;
+        height: 100px;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        display:flex
+        }
+            
+        .newstyle11 { /*no es posa bé amb align-center*/
+        vertical-align:center;  
+        justify-self: right;
+        }  
+  }
+  
+    /* If screen size is more than 1200px wide, set the font-size of <div> to 70px */
+    @media screen and (min-width: 993px) {
+      body {
+        font-size: 70px;
+        color: black;
+        background-color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: normal;
+      }
+  
+      nav.topbar2 {
+        /* el flexcontainer exterior */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+  
+      }
+  
+      ul.topbar2 {
+        /* el flex-container interior */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: white;
+      }
+  
+      .topbar2 li {
+        display: block;
+        border: solid gray 1px;
+        /* color, tipus i gruix */
+        padding: 1rem 2rem;
+        /* li possem padding de 1rem a dalt i abaix i de 2rem a dreta i esquerra */
+        background-color: black;
+      }
+  
+      .topbar2 a {
+        color: white
+      }
+  
+      .topbar2 img {
+        background-color: white;
+      }
+
+      .newstyle1 {
+        vertical-align: auto;
+        list-style-type: none;
+        margin:1px;
+        padding:0;
+        border:1px solid black;
+        height: 100px;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        display:flex
+        }
+            
+        .newstyle11 { /*no es posa bé amb align-center*/
+        vertical-align:center;  
+        justify-self: right;
+        }  
+    }
 
 .cvcustom {
 display: flex;
 flex-direction: row;
 }
 
-.spec1{
-list-style-type: none;
-background-color: black;
-display: flex;
-flex-wrap: nowrap;
-justify-content:space-between;
-align-items: right;
-}
-    
-.home {
-background-color: white;
-align-self: flex-end
-}
 
-.pers1 {
+.pers {
 color: white; /*perque no es posa white la lletra??*/
 }
-    
-.pers2 { /*perque no es posa white la lletra??*/
-color: white;
-}
-
-.pers3 { /*perque no es posa white la lletra??*/
-color: white;
-}
-
     
 h1, h2, h3{ 
 width: 100%; 
 text-align: center;
 padding: 15px;
-}
-    
-    
-    
-.newstyle1 {
-vertical-align: auto;
-list-style-type: none;
-margin:0;
-padding:0;
-border:1px;
-height: 100px;
-background-color: white;
-flex-direction: row;
-justify-content: space-around;
-display:flex
-}
-    
-.newstyle11, .newstyle12, .newstyle13, .newstyle14 { /*no es posa bé amb align-center*/
-vertical-align:center;  
-justify-self: right;
 }  
+    
    
     
 .flex-container {
@@ -72,6 +271,8 @@ background-color: gray;
 width: 100%;
 height: 220px;
 line-height: normal;
+border: 1px solid black;
+block-size: fit-content;
 }
 
 .flex-child {
@@ -96,6 +297,7 @@ margin-bottom: 0%;
 justify-content: center;
 background-color: white;
 width: 100%; 
+border: solid 1px black;
 }
 
 table, tr, th, td {
@@ -118,7 +320,7 @@ margin: 1px;
 margin-top: 10%;
 padding: 1px;
 border:1px;
-height: 250px;
+height: 50%;
 width: 100%;
 background-color: grey;
 display:flex    
