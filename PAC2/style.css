@@ -62,6 +62,14 @@
   
     /* If screen size is more than 768px wide, set the font-size of <div> to 40px */
     @media screen and (max-width:768px) and (min-width:601px){
+
+      /* 
+      a les media queries no cal repetir totes les propietats que ja s'han declarat prèviament, només cal re-escriure aquelles que canvien segon la mida de la pantalla
+      per exemple: 
+      body { 
+        font-size: 40px
+      }
+      */
       body {
         font-size: 40px;
         color: black;
@@ -69,7 +77,8 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-style: normal;
       }
-  
+      
+      /* Bona especifictat de les etiquetes i classes */
       nav.topbar2 {
         /* el flexcontainer exterior */
         display: flex;
@@ -122,6 +131,7 @@
         }  
     }
   
+    /* Bon ús de les media queries compostes */
     /* If screen size is more than 992px wide, set the font-size of <div> to 50px */
     @media screen and (max-width:992px) and (min-width:769px){
       body {
@@ -228,7 +238,7 @@
       }
 
       .newstyle1 {
-        vertical-align: auto;
+        vertical-align: auto; /* per aliniar verticalment en flexbox: align-items: center */
         list-style-type: none;
         margin:1px;
         padding:0;
@@ -254,6 +264,7 @@ flex-direction: row;
 
 .pers {
 color: white; /*perque no es posa white la lletra??*/
+/* no hi ha cap element HTML que tingui class="pers", per això no s'apliquen els estils */
 }
     
 h1, h2, h3{ 
@@ -300,6 +311,7 @@ width: 100%;
 border: solid 1px black;
 }
 
+/* ben estructurat l'ús de diversos elements amb les mateixes propietats, bon fet!*/
 table, tr, th, td {
 border: 1px solid;
 align-content: center;

@@ -13,8 +13,17 @@
 <body>
 
     <header>
+        <!-- bon ús de l'etiqueta <nav></nav>, ben fet! -->
         <nav class="topbar2">
 
+            <!-- si només hi ha un ítem, no caldria crear un tag de llista ul amb li, es podria posar la imatge directament
+            <nav>
+                <img src="" alt="">
+                <ul class="topbar2">
+                    <li></li>
+                    ...
+                </ul>
+            </nav> -->
             <ul>
                 <li> <img src="imatges/home.svg" alt="home" /></li>
             </ul>
@@ -37,15 +46,28 @@
 
     <div class="container">
         <div class="image">
-
+            <!-- Per millorar l'accessibilitat ales imatges, especialment si són rellevants, han portar una descripció al tag alt.
+            Si són imatges decoratives, s'ha de deixar buit alt=""
+            Si són importants, hauríen de portar una descripció, per exemple: alt="fotografia d'una parella amb un gos, sentats en un banc mirant el paisatge" -->
             <img src="imatges/imatge5.jpg" alt="imatge5" />
 
 
             <h2>Benvinguts al meu portfoli!</h2>
+            <!-- el títol principal de la pàgina hauria de ser un <h1></h1>, i tota la resta de h2 cap avall
+            cada secció podria tenir el seu títol h2, i si a dins hi ha subseccions, utilitzar h3. Si a la subsecció hi ha subapartats, h4, i així fins a h6 -->
 
             <p> En aquest portfolio us compartiré la meva experiència laboral i personal en diferents projectes,
                 individuals i conjunts </p>
-            <br>Però primer us comptaré una mica sobre mi...</br>
+            <br>Però primer us comptaré una mica sobre mi...</br> 
+            <!-- L'etiqueta <br> no cal tancarla (és de les poques que actua així).
+            Si es vol crear un salt de línia en un paràgraf, es pot utilitzar:
+            <p>Això és una paràgraf
+                <br>
+                Amb un salt de lína
+            </p>
+            Si es volen 2 paràgrafs, es poden utilitzar 2 tags p, un per cadascun. El propi tag <p></p>, per defecte ja deixa un espai a continuació
+            <p>Això és un paràgraf</p>
+            <p>Això és un altre paràgraf</p> -->
 
             <div class="text">
                 <h3>Qui soc?</h3>
@@ -61,6 +83,7 @@
         </div>
     </div>
 
+    <!-- per tenir un codi HTML més semàntic, les seccions o apartats generals podrien ser <section></section> -->
     <div>
         <h4>Els meus projectes</h4>
         <figure>
@@ -79,6 +102,7 @@
     </div>
 
     <div>
+        <!-- bon ús del tag <figure></figure>, ben fet! -->
         <figure>
             <img src="imatges/imatge8.jpg" alt="imatge8" />
             <figcaption>Africa</figcaption>
@@ -87,16 +111,20 @@
     </div>
 
 
+    <!-- bon ús del tag <footer></footer> -->
     <footer>
 
         <a href="imatges/logo-twitter.svg">
             <img alt="https://twitter.com" src="imatges/logo-twitter.svg" width="25px">
+        <!-- </a> -->
+        <!-- no t'oblidis de tancar el tag <a href=""></a> -->
 
             <a href="imatges/logo-linkedin.svg">
                 <img alt="https://linkedin.com" src="imatges/logo-linkedin.svg" width=25px>
-
+            <!-- </a> -->
                 <a href="imatges/logo-instagram.svg">
                     <img alt="https://instagram.com" src="imatges/logo-instagram.svg" width=25px>
+            <!-- </a> -->
 
     </footer>
 
